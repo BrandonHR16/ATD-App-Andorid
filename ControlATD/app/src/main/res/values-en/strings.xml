@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Parqueo de Buses</string>
+    <string name="Iniciarsesion">Login</string>
+    <string name="contrasena">Password</string>
+    <string name="ErrorLogIn">Invalid password or email</string>
+    <string name="Estacionar">Park</string>
+    <string name="tipo">Park type</string>
+    <string name="vermapa">Check in map</string>
+    <string name="numeroE">Parking number</string>
+    <string name="Servicio_tecnico">Support</string>
+    <string name="Nombre">Name</string>
+    <string name="retirar">Withdraw bus</string>
+    <string name="NombreView">Name</string>
+    <string name="txtvCedula">Identification</string>
+    <string name="txtvRuta">Route</string>
+    <string name="txtvIngreso">Entry</string>
+    <string name="txtvCarrera">Career</string>
+    <string name="txtvPlaca">License Plate</string>
+    <string name="txtvNumeroBus">Number</string>
+</resources>

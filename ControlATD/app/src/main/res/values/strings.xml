@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Conductores ATD</string>
+    <string name="Iniciarsesion">Iniciar sesion</string>
+    <string name="contrasena">Contraseña</string>
+    <string name="ErrorLogIn">Verifique ingresara las credenciales</string>
+    <string name="Estacionar">Estacionar Bus</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="tipo">Tipo estacionamiento</string>
+    <string name="vermapa">Ver lugar en el mapa</string>
+    <string name="numeroE">Numero de estacionamiento</string>
+    <string name="Servicio_tecnico">Servicio tecnico</string>
+    <string name="Nombre">Nombre</string>
+    <string name="retirar">Retirar Bus</string>
+    <string name="NombreView">Nombre</string>
+    <string name="txtvCedula">Cedula</string>
+    <string name="txtvRuta">Ruta</string>
+    <string name="txtvIngreso">Ingreso</string>
+    <string name="txtvCarrera">Carrera</string>
+    <string name="txtvPlaca">Placa</string>
+    <string name="txtvNumeroBus">Num de parqueo</string>
+    <string name="Roles">Roles asignados</string>
+    <string name="numeroBus">Numero de bus a retirar</string>
+    <string name="seleccionar">Seleccionar</string>
+    <string name="ErrorCorreo">Se ha producido un error al enviar el correo</string>
+
+
+    <string-array name="tiposE">
+        <item>Transicion</item>
+        <item>Final</item>
+    </string-array>
+
+</resources>

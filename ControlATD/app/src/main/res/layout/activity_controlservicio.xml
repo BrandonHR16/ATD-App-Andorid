@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".controlservicioActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="16dp"
+                android:text="Hoja de control de reviciones"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.503"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="Unidad"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+            <EditText
+                android:id="@+id/txtUnidad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:ems="10"
+                android:inputType="number"
+                app:layout_constraintTop_toBottomOf="@+id/textView13"
+                tools:layout_editor_absoluteX="65dp" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Luces Externas"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtUnidad" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                app:layout_constraintTop_toBottomOf="@+id/textView14"
+                tools:layout_editor_absoluteX="16dp">
+
+                <RadioButton
+                    android:id="@+id/rb_luces_externas_buen_estado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Buen estado" />
+
+                <RadioButton
+                    android:id="@+id/rb_luces_externas_mal_estado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Dañado" />
+            </RadioGroup>
+
+
+            <TextView
+                android:id="@+id/txt_luces_internas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Luces Internas"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                app:layout_constraintTop_toBottomOf="@+id/txt_luces_internas"
+                tools:layout_editor_absoluteX="16dp">
+
+                <RadioButton
+                    android:id="@+id/rb_luces_internas_buen_estado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Buen estado" />
+
+                <RadioButton
+                    android:id="@+id/rb_luces_internas_dañado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Dañado" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/txtEscobillas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Escobillas"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/radioGroup2" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                app:layout_constraintTop_toBottomOf="@+id/txtEscobillas"
+                tools:layout_editor_absoluteX="16dp">
+
+                <RadioButton
+                    android:id="@+id/rb_escobillas_buen_estado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Buen estado" />
+
+                <RadioButton
+                    android:id="@+id/rb_escobillas_dañado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Dañado" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/txtOtros"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Otros"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/radioGroup3" />
+
+            <EditText
+                android:id="@+id/txtOtros_descripcion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:ems="10"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                app:layout_constraintStart_toStartOf="@+id/txtOtros"
+                app:layout_constraintTop_toBottomOf="@+id/txtOtros" />
+
+            <Button
+                android:id="@+id/btn_guardar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enviar Informe"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtOtros_descripcion" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

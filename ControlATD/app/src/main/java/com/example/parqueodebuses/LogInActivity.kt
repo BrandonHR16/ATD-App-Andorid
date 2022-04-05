@@ -40,7 +40,7 @@ class LogInActivity : AppCompatActivity() {
 
     private fun inicioSesion() {
         val email = binding.txtCorreo.text.toString()
-        val email2 = email + "@grupoatdcr.com"
+        val email2 = email
         val password = binding.txtContra.text.toString()
         if (email.isNotEmpty() && password.isNotEmpty()) {
             auth.signInWithEmailAndPassword(email2, password)

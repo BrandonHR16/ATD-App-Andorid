@@ -29,17 +29,23 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, ControlActivity::class.java)
             startActivity(intent)
         }
+
         binding.btnServico.setOnClickListener {
             val intent = Intent(this, controlservicioActivity::class.java)
             startActivity(intent)
         }
+
         binding.enviarReporte.setOnClickListener {
             val intent = Intent(this, ReporteActivity::class.java)
             startActivity(intent)
         }
 
-
+        binding.registrarusuarios.setOnClickListener {
+            val intent = Intent(this, RegisterActivity::class.java)
+            startActivity(intent)
         }
+    }
+
 
     //verificar cual es el rol del usuario para mostrar los botones correspondientes
     private fun verificarRol(){

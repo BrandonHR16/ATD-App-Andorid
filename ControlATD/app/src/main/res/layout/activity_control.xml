@@ -88,7 +88,7 @@
                     app:layout_constraintTop_toBottomOf="@+id/txtquedan" />
 
                 <EditText
-                    android:id="@+id/txtunidad"
+                    android:id="@+id/txtUnidad"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
@@ -122,7 +122,7 @@
                     android:text="Ramal"
                     android:textSize="18sp"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/txtunidad" />
+                    app:layout_constraintTop_toBottomOf="@+id/txtUnidad" />
 
                 <EditText
                     android:id="@+id/txtramal"

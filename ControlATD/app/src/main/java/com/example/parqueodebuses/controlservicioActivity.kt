@@ -31,6 +31,10 @@ class controlservicioActivity : AppCompatActivity() {
             enviarServicio()
         }
 
+        binding.btnbackCR.setOnClickListener {
+            finish()
+        }
+
     }
 
     // Unidad, Luces Externas, Luces Internas, scobillas, otro

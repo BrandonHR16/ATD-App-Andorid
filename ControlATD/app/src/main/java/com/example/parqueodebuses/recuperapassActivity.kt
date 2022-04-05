@@ -20,6 +20,11 @@ class recuperapassActivity : AppCompatActivity() {
         binding = ActivityRecuperapassBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        binding.btnBackRC.setOnClickListener {
+         //redireccionar a la pantalla de login
+            finish()
+        }
+
 
         binding.btnEnviar.setOnClickListener {
             val email = binding.editTextTextEmailAddress.text.toString()

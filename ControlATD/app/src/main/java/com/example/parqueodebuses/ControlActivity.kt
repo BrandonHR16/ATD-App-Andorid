@@ -31,14 +31,13 @@ class ControlActivity : AppCompatActivity() {
         }
 
         binding.btnBack.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
-            startActivity(intent)
+            finish()
         }
 
 
     }
     fun limpirar(){
-        binding.txtunidad.text.clear()
+        binding.txtUnidad.text.clear()
         binding.txtramal.text.clear()
         binding.txthora.text.clear()
         binding.txtcapacidad.text.clear()
@@ -48,7 +47,7 @@ class ControlActivity : AppCompatActivity() {
 
    // funcio  para enviar el fomulario a Firestore
     fun sendForm() {
-        val Unidad = binding.txtunidad.text.toString()
+        val Unidad = binding.txtUnidad.text.toString()
         val Ramal = binding.txtramal.text.toString()
         val Hora = binding.txthora.text.toString()
         val capacidad = binding.txtcapacidad.text.toString()

@@ -26,6 +26,7 @@ class RegisterActivity : AppCompatActivity() {
             val email = binding.txtCorreo.text.toString()
             val password = binding.txtPassword.text.toString()
             val nombre = binding.txtNombre.text.toString()
+            val cedula = binding.txtCedula.text.toString()
             var role = "false"
             if (binding.rbAdmin.isChecked){
                 role = "admin"
@@ -39,7 +40,7 @@ class RegisterActivity : AppCompatActivity() {
                 binding.txtCorreo.error = "Ingrese un correo"
                 binding.txtPassword.error = "Ingrese una contraseña"
             }else{
-                RegisterAccount(email, password, nombre, role)
+                RegisterAccount(email, password, nombre, role, cedula)
             }
 
         }
@@ -47,7 +48,7 @@ class RegisterActivity : AppCompatActivity() {
 
     }
 
-    fun RegisterAccount(correo:String, contraseña:String, nombre:String, Role:String){
+    fun RegisterAccount(correo:String, contraseña:String, nombre:String, Role:String, cedula:String){
         //registrar a un usuario
         FirebaseAuth.getInstance().createUserWithEmailAndPassword(correo, contraseña)
             .addOnCompleteListener {
@@ -60,7 +61,8 @@ class RegisterActivity : AppCompatActivity() {
                         mapOf(
                             "Nombre" to nombre,
                             "rol" to Role,
-                            "Correo" to correo
+                            "Correo" to correo,
+                            "Cedula" to cedula
                         )
                     )
                 }
@@ -81,5 +83,6 @@ class RegisterActivity : AppCompatActivity() {
         binding.txtNombre.setText("")
         binding.rbAdmin.isChecked = false
         binding.rbUsuario.isChecked = false
+        binding.txtCedula.setText("")
     }
 }

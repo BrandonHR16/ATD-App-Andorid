@@ -8,75 +8,77 @@
     tools:context=".MainActivity">
 
 
-        <ScrollView
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            android:layout_height="wrap_content">
 
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="354dp"
+                android:layout_height="193dp"
+                android:layout_marginTop="28dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/LogoATD" />
 
-                <ImageView
-                    android:id="@+id/imageView"
-                    android:layout_width="240dp"
-                    android:layout_height="212dp"
-                    android:layout_marginTop="28dp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.497"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/atd" />
+            <Button
+                android:id="@+id/btnPuntoControl"
+                android:layout_width="133dp"
+                android:layout_height="102dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="72dp"
+                android:text="Puntos de control"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
-                <Button
-                    android:id="@+id/btnPuntoControl"
-                    android:layout_width="133dp"
-                    android:layout_height="102dp"
-                    android:layout_marginStart="40dp"
-                    android:layout_marginTop="72dp"
-                    android:text="Puntos de control"
-                    android:visibility="gone"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/imageView" />
+            <Button
+                android:id="@+id/btnServico"
+                android:layout_width="132dp"
+                android:layout_height="101dp"
+                android:layout_marginTop="72dp"
+                android:layout_marginEnd="40dp"
+                android:text="Hoja de control de servicio"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
-                <Button
-                    android:id="@+id/btnServico"
-                    android:layout_width="132dp"
-                    android:layout_height="101dp"
-                    android:layout_marginTop="72dp"
-                    android:layout_marginEnd="40dp"
-                    android:text="Hoja de control de servicio"
-                    android:visibility="gone"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/imageView" />
+            <Button
+                android:id="@+id/enviarReporte"
+                android:layout_width="132dp"
+                android:layout_height="99dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="32dp"
+                android:text="Enviar reporte"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnPuntoControl" />
 
-                <Button
-                    android:id="@+id/enviarReporte"
-                    android:layout_width="132dp"
-                    android:layout_height="99dp"
-                    android:layout_marginStart="40dp"
-                    android:layout_marginTop="32dp"
-                    android:text="Enviar reporte"
-                    android:visibility="gone"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/btnPuntoControl" />
-
-                <Button
-                    android:id="@+id/registrarusuarios"
-                    android:layout_width="132dp"
-                    android:layout_height="99dp"
-                    android:layout_marginTop="36dp"
-                    android:layout_marginEnd="40dp"
-                    android:text="Resgistrar usuario"
-                    android:visibility="gone"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/btnServico" />
+            <Button
+                android:id="@+id/registrarusuarios"
+                android:layout_width="132dp"
+                android:layout_height="99dp"
+                android:layout_marginTop="36dp"
+                android:layout_marginEnd="40dp"
+                android:text="Resgistrar usuario"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnServico" />
 
 
-            </androidx.constraintlayout.widget.ConstraintLayout>
-        </ScrollView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

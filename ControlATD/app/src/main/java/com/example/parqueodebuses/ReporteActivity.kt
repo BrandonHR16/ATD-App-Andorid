@@ -87,13 +87,19 @@ class ReporteActivity : AppCompatActivity() {
 
         binding.btnXD.setOnClickListener {
 
-            if (binding.rbControlServicio.isChecked) {
-                getdatosReviciones()
-            } else if (binding.rbPuntoControl.isChecked) {
-                getdatosPutosControl()
-            } else {
-                Toast.makeText(this, "Seleccione una opcion", Toast.LENGTH_SHORT).show()
+            try {
+                if (binding.rbControlServicio.isChecked) {
+                    getdatosReviciones()
+                } else if (binding.rbPuntoControl.isChecked) {
+                    getdatosPutosControl()
+                } else {
+                    Toast.makeText(this, "Seleccione una opcion", Toast.LENGTH_SHORT).show()
+                }
             }
+            catch (e: Exception){
+                Log.d("Error", e.message.toString())
+            }
+
         }
 
     }
@@ -293,7 +299,6 @@ class ReporteActivity : AppCompatActivity() {
 
             }
         }
-
     }
 
     fun getdatosReviciones() {

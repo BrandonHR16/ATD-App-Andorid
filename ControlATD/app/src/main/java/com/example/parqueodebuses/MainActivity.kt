@@ -54,7 +54,7 @@ class MainActivity : AppCompatActivity() {
         val docRef = db.collection("Usuarios").document(user!!.uid)
         docRef.get().addOnSuccessListener { document ->
             if (document != null) {
-                val rol = document.get("Rol")
+                val rol = document.get("rol")
                 if (rol == "admin"){
                     binding.btnPuntoControl.visibility = android.view.View.VISIBLE
                     binding.btnServico.visibility = android.view.View.VISIBLE
